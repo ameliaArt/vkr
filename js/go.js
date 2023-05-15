@@ -3,7 +3,7 @@ function GetFun() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  const form = this.getElementById("form"); //зантсив в переменую форму
+  const form = document.getElementById("form"); //зантсив в переменую форму
   form.addEventListener("submit", FormSend); // задаем событие переменной форме бля ткрятия функйии formsend
 
   async function FormSend(e) {
