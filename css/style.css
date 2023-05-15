@@ -82,7 +82,6 @@ img {
   justify-content: space-between;
 }
 .main2 {
-  display: flex;
   margin: 100px 300px 0px 300px;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -134,4 +133,13 @@ fieldset {
 
 .answer p input {
   vertical-align: middle;
+}
+.file_prev {
+  display: inline-block;
+  max-width: 100px;
+  padding-top: 10px;
+}
+
+.file_prev img {
+  max-width: 100%;
 }

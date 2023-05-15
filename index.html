@@ -56,6 +56,15 @@
             illo, repudiandae dolores corrupti facilis sed reiciendis quam
             repellat, reprehenderit ut soluta aperiam voluptatibus earum ullam!
             Architecto laborum magni illo?
+            <div>
+              <input
+                type="file"
+                accept=".jpg .png .gif"
+                name="image"
+                id="photo"
+              />
+            </div>
+            <div id="file_pre" class="file_prev"></div>
           </fieldset>
           <fieldset class="greed_test">
             <legend>Анкета 1</legend>
@@ -64,7 +73,7 @@
               <label class="bolt" _req>1 Когда сошла лавина</label>
 
               <div class="qwest">
-                <p>Введите дату:<input type="date" /></p>
+                <p>Введите дату:<input type="date" name="date" /></p>
                 <p><input type="radio" /> Не знаю</p>
               </div>
             </div>
@@ -134,23 +143,50 @@
                 </p>
 
                 <p>
-                  <input type="radio" />Выше взрослого мужчины с поднятой в верх
-                  рукой (около 2,5 м и более)
+                  <input
+                    type="radio"
+                    value="Выше взрослого мужчины с поднятой в верх
+                  рукой (около 2,5 м и более)"
+                    name="qw3.3"
+                  />Выше взрослого мужчины с поднятой в верх рукой (около 2,5 м
+                  и более)
                 </p>
                 <p>
-                  <input type="radio" />Выше взрослого мужчины (около 2,0 м)
+                  <input
+                    type="radio"
+                    value="Выше взрослого мужчины (около 2,0 м)"
+                    name="qw3.3"
+                  />Выше взрослого мужчины (около 2,0 м)
                 </p>
                 <p>
-                  <input type="radio" />По грудь взрослого мужчины (около 1,5 м)
+                  <input
+                    type="radio"
+                    value="По грудь взрослого мужчины (около 1,5 м)"
+                    name="qw3.3"
+                  />По грудь взрослого мужчины (около 1,5 м)
                 </p>
                 <p>
-                  <input type="radio" />По пояс взрослого мужчины (около 1,0 м)
+                  <input
+                    type="radio"
+                    value="По пояс взрослого мужчины (около 1,0 м)"
+                    name="qw3.3"
+                  />По пояс взрослого мужчины (около 1,0 м)
                 </p>
                 <p>
-                  <input type="radio" />По колено взрослого мужчине (около 0,5 м
-                  и меньше)
+                  <input
+                    type="radio"
+                    value="По колено взрослого мужчине (около 0,5 м
+                  и меньше)"
+                    name="qw3.3"
+                  />По колено взрослого мужчине (около 0,5 м и меньше)
                 </p>
-                <p><input type="radio" />Все равно затрудняюсь с ответом</p>
+                <p>
+                  <input
+                    type="radio"
+                    value="Все равно затрудняюсь с ответом"
+                    name="qw3.3"
+                  />Все равно затрудняюсь с ответом
+                </p>
 
                 <p>
                   Укажите пол:
@@ -166,10 +202,21 @@
               <label class="bolt">4 Место отрыва лавины на склоне:</label>
               <div class="qwest">
                 <p>
-                  <input type="radio" /> С вершины склона/верхняя часть склона
+                  <input
+                    type="radio"
+                    value="С вершины склона/верхняя часть склона"
+                    name="qw4"
+                  />
+                  С вершины склона/верхняя часть склона
                 </p>
-                <p><input type="radio" /> Середина склона</p>
-                <p><input type="radio" /> Не видно</p>
+                <p>
+                  <input type="radio" value="Середина склона" name="qw4" />
+                  Середина склона
+                </p>
+                <p>
+                  <input type="radio" value="Не видно" name="qw4" />
+                  Не видно
+                </p>
               </div>
             </div>
 
@@ -178,10 +225,21 @@
                 >5 После схода лавины остался ли снег на склоне:</label
               >
               <div class="qwest">
-                <p><input type="radio" />Да, склон покрыт снегом</p>
                 <p>
-                  <input type="radio" /> Нет, видна поверхность склона (трава,
-                  камни, почва)
+                  <input
+                    type="radio"
+                    value="Да, склон покрыт снегом"
+                    name="qw5"
+                  />Да, склон покрыт снегом
+                </p>
+                <p>
+                  <input
+                    type="radio"
+                    value="Нет, видна поверхность склона (трава,
+                  камни, почва)"
+                    name="qw5"
+                  />
+                  Нет, видна поверхность склона (трава, камни, почва)
                 </p>
                 <p><input type="radio" />Сложно сказать</p>
               </div>
