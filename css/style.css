@@ -1,0 +1,137 @@
+.main {
+  margin: 50px 20px 0px 20px;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin: -50px -20px 0px -20px;
+  text-align: center;
+  background-color: #00bfff;
+  height: 100px;
+  /* position: fixed; */
+}
+nav ul li {
+  display: inline-block;
+  background-color: azure;
+
+  padding: 40px 65px 42px 65px;
+}
+nav ul li:hover {
+  display: inline-block;
+  background-color: antiquewhite;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+}
+.logo {
+  position: relative;
+}
+
+.img1 {
+  /* position: absolute;
+
+  left: 20px; */
+  margin-right: 70px;
+}
+
+.img2 {
+  /* position: absolute;
+  right: 20px;
+
+  filter: drop-shadow(); */
+  margin-left: 70px;
+}
+
+.zag {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.elem {
+  height: 50px;
+  width: 18%;
+  background-color: blanchedalmond;
+  display: inline-block;
+  text-align: center;
+}
+.elem:hover {
+  background-color: rgba(255, 236, 206, 50%);
+}
+
+.vkladki {
+  background-color: burlywood;
+  width: 50%;
+  margin: 15px;
+  position: absolute;
+  right: 25%;
+}
+
+/* form {
+  width: 50%;
+  position: absolute;
+  margin: 100px 20px 20px 20px;
+  right: 25%;
+} */
+.rrr {
+  display: flex;
+  justify-content: space-between;
+}
+.main2 {
+  display: flex;
+  margin: 100px 300px 0px 300px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "map test"
+    "photo test";
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+.greed_map {
+  grid-area: map;
+}
+.greed_photo {
+  grid-area: photo;
+}
+.greed_test {
+  grid-area: test;
+}
+fieldset {
+  border: 2px groove;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.bolt {
+  font-weight: bold;
+}
+.ital {
+  font-style: italic;
+}
+
+.qwest {
+  margin: 5px 0px 10px 0px;
+}
+.qwest p input::before {
+  margin-left: 20px;
+}
+.answer {
+  margin: 10px 0px 10px 0px;
+}
+
+.divbutton {
+}
+
+.answer p {
+  margin-bottom: 5px;
+}
+
+.answer p input {
+  vertical-align: middle;
+}
