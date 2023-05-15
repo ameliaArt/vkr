@@ -47,14 +47,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   function uploadFile(file) {
-    return file;
-  }
-
-  var readre = new FileReader();
+    var readre = new FileReader();
 
   readre.onload = function (e) {
     pverPhoto.innerHTML = `<img src="${e.target.result}" alt="Фото">`;
   };
 
   readre.readAsDataURL(file);
+  }
+
+  
 });
