@@ -74,7 +74,7 @@
 
               <div class="qwest">
                 <p>Введите дату:<input type="date" name="date" /></p>
-                <p><input type="radio" /> Не знаю</p>
+                <p><input type="radio" name="qw1" value="не знаю" /> Не знаю</p>
               </div>
             </div>
 
@@ -82,20 +82,40 @@
               <label class="bolt">2 Как выглядит тело лавины</label>
               <div class="qwest">
                 <p>
-                  <input type="radio" value="" name="qw2" /> Поверхность лавины
+                  <input
+                    type="radio"
+                    value="Поверхность лавины
                   выглядит свежей (видны отдельные блоки, сверху нет свежего
-                  снега)
+                  снега)"
+                    name="qw2"
+                  />
+                  Поверхность лавины выглядит свежей (видны отдельные блоки,
+                  сверху нет свежего снега)
                 </p>
                 <p>
-                  <input type="radio" value="" name="qw2" /> Поверхность лавины
-                  занесена снегом
+                  <input
+                    type="radio"
+                    value="Поверхность лавины
+                  занесена снегом"
+                    name="qw2"
+                  />
+                  Поверхность лавины занесена снегом
                 </p>
                 <p>
-                  <input type="radio" value="" name="qw2" /> Поверхность лавины
+                  <input
+                    type="radio"
+                    value="Поверхность лавины
                   замусорена (на поверхности снега сломанные ветки деревьев,
-                  стволы, почва, камни)
+                  стволы, почва, камни)"
+                    name="qw2"
+                  />
+                  Поверхность лавины замусорена (на поверхности снега сломанные
+                  ветки деревьев, стволы, почва, камни)
                 </p>
-                <p><input type="radio" value="" name="qw2" /> Сложно сказать</p>
+                <p>
+                  <input type="radio" value="Сложно сказать" name="qw2" />
+                  Сложно сказать
+                </p>
               </div>
             </div>
 
@@ -103,37 +123,52 @@
               <label class="bolt">3 Размеры лавины/лавинного тела</label>
               <div class="qwest">
                 <p class="ital">Длина лавинного тела вдоль склона:</p>
-                <p>В метрах: <input type="text" /></p>
-                <p>В шагах: <input type="text" /></p>
+                <p>В метрах: <input type="text" name="met" /></p>
+                <p>В шагах: <input type="text" name="steps" /></p>
 
                 <p>
                   Укажите пол:
-                  <select>
-                    <option>Мужчина</option>
-                    <option>Женщина</option>
+                  <select name="select">
+                    <option value="Мужчина">Мужчина</option>
+                    <option value="Женщина">Женщина</option>
                   </select>
                 </p>
-                <p><input type="radio" />Не знаю, затрудняюсь ответить</p>
+                <p>
+                  <input
+                    type="radio"
+                    name="qw3.1"
+                    value="Не знаю, затрудняюсь ответить"
+                  />Не знаю, затрудняюсь ответить
+                </p>
               </div>
 
               <div class="qwest">
                 <p class="ital">Ширина лавинного тела:</p>
-                <p>В метрах: <input type="text" /></p>
-                <p>В шагах: <input type="text" /></p>
+                <p>В метрах: <input type="text" name="met2" /></p>
+                <p>
+                  В шагах:
+                  <input type="text" name="steps2" />
+                </p>
 
                 <p>
                   Укажите пол:
-                  <select>
-                    <option>Мужчина</option>
-                    <option>Женщина</option>
+                  <select name="select2">
+                    <option value="Мужчина">Мужчина</option>
+                    <option value="Женщина">Женщина</option>
                   </select>
                 </p>
-                <p><input type="radio" />Не знаю, затрудняюсь ответить</p>
+                <p>
+                  <input
+                    type="radio"
+                    name="qw3.2"
+                    value="Не знаю, затрудняюсь ответить"
+                  />Не знаю, затрудняюсь ответить
+                </p>
               </div>
 
               <div class="qwest">
                 <p class="ital">Высота завала:</p>
-                <p>в метрах (примерно): <input type="text" /></p>
+                <p>в метрах (примерно): <input type="text" name="met3" /></p>
               </div>
 
               <div class="qwest">
@@ -190,12 +225,18 @@
 
                 <p>
                   Укажите пол:
-                  <select>
-                    <option>Мужчина</option>
-                    <option>Женщина</option>
+                  <select name="select3">
+                    <option value="Мужчина">Мужчина</option>
+                    <option value="Женщина">Женщина</option>
                   </select>
                 </p>
-                <p><input type="radio" />Не знаю, затрудняюсь ответить</p>
+                <p>
+                  <input
+                    type="radio"
+                    name="qw3.4"
+                    value="Не знаю, затрудняюсь ответить"
+                  />Не знаю, затрудняюсь ответить
+                </p>
               </div>
             </div>
             <div class="answer">
@@ -241,7 +282,10 @@
                   />
                   Нет, видна поверхность склона (трава, камни, почва)
                 </p>
-                <p><input type="radio" />Сложно сказать</p>
+                <p>
+                  <input type="radio" name="qw5" value="Сложно сказать" />Сложно
+                  сказать
+                </p>
               </div>
             </div>
 
@@ -249,7 +293,7 @@
               <label class="bolt">6 В лавину попали люди:</label>
               <div class="qwest">
                 <p><input type="radio" value="no" name="qw6" />Нет</p>
-                <p>Введите кол-во<input type="text" /></p>
+                <p>Введите кол-во<input type="text" name="text6" /></p>
               </div>
             </div>
 
@@ -269,7 +313,7 @@
           </fieldset>
           <fieldset class="greed_item">
             <div class="divbutton">
-              <button type="button">Отправить</button>
+              <button type="submit">Отправить</button>
             </div>
           </fieldset>
         </form>

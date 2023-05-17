@@ -1,6 +1,4 @@
-function GetFun() {
-  alert("ghghghgh");
-}
+"use strict";
 
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("form"); //зантсив в переменую форму
@@ -9,25 +7,26 @@ document.addEventListener("DOMContentLoaded", function () {
   async function FormSend(e) {
     e.preventDefault(); //запрет на стандартную отправку
 
-    let error = formValidate(form); //проекка на валидацию данных
+    // let error = formValidate(form); //проекка на валидацию данных
 
     let formDate = new FormData(form); //сбор данных из формы
     formDate.append("image", img.files[0]);
+    form.classList.add("_sending");
+    // let responce = await fetch("sendmail.php", {
+    //   method: "POST",
+    //   body: formDate,
+    // });
 
-    let responce = await fetch("sendmail.php", {
-      //использование файдла пхп
-      method: "POST",
-      body: formDate,
-    });
-
-    if (responce.ok) {
-      //проверка и отчит=стка формы
-      let result = await readre.json();
-      alert(result.message);
-      form.reset();
-    } else {
-      alert("ошибка");
-    }
+    // if (responce.ok) {
+    //   //проверка и отчит=стка формы
+    //   let result = await responce.json();
+    //   alert(result.message);
+    //   pverPhoto.innerHTML = ``;
+    //   form.reset();
+    //   form.classList.remove("_sending");
+    // } else {
+    //   alert("ошибка");
+    // }
   }
 
   function formValidate(form) {
@@ -37,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     for (let index = 0; index < formReq.length; index++) {
       const element = array[index];
     }
+    return error;
   }
 
   const img = document.getElementById("photo"); //фото
@@ -49,12 +49,10 @@ document.addEventListener("DOMContentLoaded", function () {
   function uploadFile(file) {
     var readre = new FileReader();
 
-  readre.onload = function (e) {
-    pverPhoto.innerHTML = `<img src="${e.target.result}" alt="Фото">`;
-  };
+    readre.onload = function (e) {
+      pverPhoto.innerHTML = `<img src="${e.target.result}" alt="Фото">`;
+    };
 
-  readre.readAsDataURL(file);
+    readre.readAsDataURL(file);
   }
-
-  
 });
