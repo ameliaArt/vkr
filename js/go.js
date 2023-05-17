@@ -12,21 +12,21 @@ document.addEventListener("DOMContentLoaded", function () {
     let formDate = new FormData(form); //сбор данных из формы
     formDate.append("image", img.files[0]);
     form.classList.add("_sending");
-    // let responce = await fetch("sendmail.php", {
-    //   method: "POST",
-    //   body: formDate,
-    // });
+    let responce = await fetch("sendmail.php", {
+      method: "POST",
+      body: formDate,
+    });
 
-    // if (responce.ok) {
-    //   //проверка и отчит=стка формы
-    //   let result = await responce.json();
-    //   alert(result.message);
-    //   pverPhoto.innerHTML = ``;
-    //   form.reset();
-    //   form.classList.remove("_sending");
-    // } else {
-    //   alert("ошибка");
-    // }
+    if (responce.ok) {
+      //проверка и отчит=стка формы
+      let result = await responce.json();
+      alert(result.message);
+      pverPhoto.innerHTML = ``;
+      form.reset();
+      form.classList.remove("_sending");
+    } else {
+      alert("ошибка");
+    }
   }
 
   function formValidate(form) {
